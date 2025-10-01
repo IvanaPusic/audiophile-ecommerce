@@ -1,0 +1,35 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.hero {
+  background-image: url("../../../public/assets/png/headphones-mobile.png");
+  background-size: cover;
+  background-position: center;
+  @include flex-center(0);
+  flex-direction: column;
+  padding: 6.75rem 5.5rem 7rem 5.5rem;
+  text-align: center;
+  &__new-product {
+    text-transform: uppercase;
+    @include font($fs-14, 87.5%, 10px, $neutral-100, $ff-manrope);
+    opacity: 0.5;
+    padding-bottom: 1rem;
+  }
+  &__title {
+    @include font($fs-56, 58px, 2px, $neutral-100, $ff-manrope, 700);
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+  }
+  &__info {
+    @include font($fs-15, 25px, normal, $neutral-100, $ff-manrope, 500);
+    opacity: 0.75;
+    padding-bottom: 1.75rem;
+  }
+  &__btn {
+    @include button-reset;
+    @include button($neutral-100, $beige-200, 0, none, 0.938rem 1.969rem);
+    @include font($fs-13, 18px, 1px, $neutral-100, $ff-manrope, 700);
+    text-transform: uppercase;
+  }
+}
