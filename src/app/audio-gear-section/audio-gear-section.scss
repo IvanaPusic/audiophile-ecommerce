@@ -1,0 +1,31 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.audio-gear-section {
+  padding-top: 7.5rem;
+  padding-inline: 1.5rem;
+  @include flex-col(2.5rem);
+  align-items: center;
+  &__content {
+    &-title,
+    &-text {
+      text-align: center;
+    }
+
+    &-title {
+      @include font($fs-28, 38px, 1px, $dark-100, $ff-manrope, 700);
+      font-weight: 700;
+      text-transform: uppercase;
+      span {
+        color: $beige-200;
+      }
+      padding-bottom: 2rem;
+    }
+
+    &-text {
+      @include font($fs-15, 25px, normal, $dark-100, $ff-manrope, 500);
+      opacity: 0.5;
+    }
+  }
+}
