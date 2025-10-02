@@ -1,0 +1,9 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+.products-section {
+  padding-top: 7.5rem;
+  padding-inline: 1.5rem;
+  @include flex-col(1.5rem);
+  align-items: center;
+}
