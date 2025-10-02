@@ -2,6 +2,10 @@
 @use "../../../styles/abstracts/fonts" as *;
 @use "../../../styles/abstracts/mixins" as *;
 
+article {
+  width: 100%;
+}
+
 .product-1 {
   background-color: $beige-200;
   background-image: url("../../../../public/assets/png/circles.png");
