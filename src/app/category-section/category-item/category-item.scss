@@ -1,0 +1,36 @@
+@use "../../../styles/abstracts/colors" as *;
+@use "../../../styles/abstracts/fonts" as *;
+@use "../../../styles/abstracts/mixins" as *;
+
+.category-item {
+  background-color: $neutral-300;
+  border-radius: 0.5rem;
+  padding: 1.25rem 6.813rem;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    @include font($fs-15, 20px, 1.07143px, $dark-100, $ff-manrope, 700);
+    text-transform: uppercase;
+    padding-top: 2.25rem;
+    padding-bottom: 1.063rem;
+  }
+
+  &__link {
+    display: inline-block;
+    @include flex-center(0.833rem);
+    text-decoration: none;
+    span {
+      display: inline-block;
+      @include font($fs-13, 18px, 1px, $dark-100, $ff-manrope, 700);
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+  }
+}
