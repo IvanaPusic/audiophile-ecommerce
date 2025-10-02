@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 import { Header } from './header/header';
 import { Hero } from './hero/hero';
 import { CategorySection } from './category-section/category-section';
@@ -10,6 +10,7 @@ import { AudioGearSection } from './audio-gear-section/audio-gear-section';
   selector: 'app-root',
   imports: [
     RouterOutlet,
+    RouterModule,
     Header,
     Hero,
     CategorySection,
