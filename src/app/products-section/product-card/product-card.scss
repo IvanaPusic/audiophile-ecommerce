@@ -1,0 +1,100 @@
+@use "../../../styles/abstracts/colors" as *;
+@use "../../../styles/abstracts/fonts" as *;
+@use "../../../styles/abstracts/mixins" as *;
+
+.product-1 {
+  background-color: $beige-200;
+  background-image: url("../../../../public/assets/png/circles.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto;
+  @include flex-center(1.5rem);
+  flex-direction: column;
+  padding-top: 3.438rem;
+  padding-bottom: 3.438rem;
+  border-radius: 0.5rem;
+  padding-inline: 1.5rem;
+  ::ng-deep h2 {
+    @include font($fs-36, 40px, 1.28571px, $neutral-100, $ff-manrope, 700);
+    text-transform: uppercase;
+  }
+  ::ng-deep h2,
+  ::ng-deep p {
+    text-align: center;
+  }
+
+  ::ng-deep p {
+    max-width: 280px;
+    @include font($fs-15, 25px, normal, $neutral-100, $ff-manrope, 500);
+    opacity: 0.75;
+  }
+
+  ::ng-deep button {
+    @include button-reset;
+    @include button($neutral-100, $dark-100, 0, none, 0.938rem 1.969rem);
+    @include font($fs-13, 18px, 1px, $neutral-100, 700);
+    text-transform: uppercase;
+  }
+}
+
+.product-2 {
+  border-radius: 0.5rem;
+  background-image: url("../../../../public/assets/png/products-speaker-2.png");
+  background-repeat: no-repeat;
+  @include flex-col(2rem);
+  padding-inline: 1.5rem;
+  padding-top: 6.313rem;
+  padding-bottom: 6.313rem;
+  padding-right: 6.313rem;
+  ::ng-deep h2 {
+    @include font($fs-28, 38px, 2px, $dark-100, $ff-manrope, 700);
+    text-transform: uppercase;
+  }
+
+  ::ng-deep button {
+    @include button-reset;
+    @include button(
+      $dark-100,
+      transparent,
+      0,
+      1.5px solid $dark-100,
+      0.938rem 1.969rem
+    );
+    @include font($fs-13, 18px, 1px, $dark-100, 700);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.product-3 {
+  min-width: 327px;
+  padding: 6.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-image: url("../../../../public/assets/png/product-earphones.png");
+  background-repeat: no-repeat;
+}
+
+.product-4 {
+  padding: 2.563rem 3.5rem 2.563rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: $neutral-300;
+  ::ng-deep h2 {
+    @include font($fs-28, 38px, 2px, $dark-100, $ff-manrope, 700);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+
+  ::ng-deep button {
+    @include button-reset;
+    @include button(
+      $dark-100,
+      transparent,
+      0,
+      1.5px solid $dark-100,
+      0.938rem 1.969rem
+    );
+    @include font($fs-13, 18px, 1px, $dark-100, 700);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
