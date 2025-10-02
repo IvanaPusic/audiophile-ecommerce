@@ -1,0 +1,14 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.category-section {
+  padding-top: 5.75rem;
+  padding-inline: 1.5rem;
+
+  &__list {
+    @include flex-col(5.25rem);
+    justify-content: center;
+    align-items: center;
+  }
+}
