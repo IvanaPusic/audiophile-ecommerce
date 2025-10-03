@@ -1,6 +1,6 @@
 <app-header />
-<app-hero />
-<app-category-section />
-<app-products-section />
-<app-audio-gear-section />
+@if(modalService.isModalOpen()) {
+<app-menu-modal />
+}
+<router-outlet />
 <app-footer />

@@ -1,0 +1,13 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.hero-section {
+  background-color: $dark-100;
+  padding: 2rem 0;
+  @include flex-center(0);
+  &__title {
+    text-transform: uppercase;
+    @include font($fs-28, 38px, 2px, $neutral-100, $ff-manrope, 700);
+  }
+}
