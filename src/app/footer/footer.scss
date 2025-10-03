@@ -1,0 +1,45 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.footer {
+  background-color: $dark-100;
+  padding: 3.25rem 1.5rem 2.375rem;
+  &__logo-links {
+    @include flex-center(3rem);
+    flex-direction: column;
+    &-list {
+      @include flex-col(1rem);
+    }
+
+    &-list-item-link {
+      @include font($fs-13, 25px, 2px, $neutral-100, $ff-manrope, 700);
+      text-transform: uppercase;
+      text-decoration: none;
+      // font-weight: 700;
+    }
+  }
+
+  &__content {
+    padding-top: 3rem;
+    &-text {
+      text-align: center;
+      padding-bottom: 3rem;
+      @include font($fs-15, 25px, normal, $neutral-100, $ff-manrope, 500);
+      opacity: 0.5;
+    }
+
+    &-copyright {
+      p {
+        text-align: center;
+        padding-bottom: 3rem;
+        @include font($fs-15, 25px, normal, $neutral-100, $ff-manrope, 500);
+        opacity: 0.5;
+      }
+
+      &-list {
+        @include flex-center(1rem);
+      }
+    }
+  }
+}
