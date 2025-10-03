@@ -3,8 +3,7 @@
 @use "../../styles/abstracts/mixins" as *;
 
 .audio-gear-section {
-  padding-top: 7.5rem;
-  padding-inline: 1.5rem;
+  padding: 7.5rem 1.5rem;
   @include flex-col(2.5rem);
   align-items: center;
   &__content {
