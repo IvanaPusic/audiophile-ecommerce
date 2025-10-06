@@ -1,0 +1,7 @@
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.earphones-section {
+  padding: 4rem 1.5rem 7.5rem;
+  @include flex-col(7.5rem);
+}
