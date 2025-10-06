@@ -1,0 +1,35 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.product {
+  @include flex-center(2rem);
+  flex-direction: column;
+  ::ng-deep div {
+    @include flex-center(1.5rem);
+    flex-direction: column;
+    span,
+    h2,
+    p {
+      text-align: center;
+    }
+    span {
+      @include font($fs-14, 19px, 10px, $beige-200, $ff-manrope, 400);
+      text-transform: uppercase;
+    }
+    h2 {
+      @include font($fs-28, 38px, 1px, $dark-100, $ff-manrope, 700);
+      text-transform: uppercase;
+    }
+    p {
+      @include font($fs-15, 25px, normal, $dark-100, $ff-manrope, 500);
+      opacity: 0.5;
+    }
+    button {
+      @include button-reset;
+      @include button($neutral-100, $beige-200, 0, none, 0.938rem 1.938rem);
+      @include font($fs-13, 18px, 1px, $neutral-100, $ff-manrope, 700);
+      text-transform: uppercase;
+    }
+  }
+}

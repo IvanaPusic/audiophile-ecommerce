@@ -1,5 +1,5 @@
 import { Component, signal, inject } from '@angular/core';
-import { RouterOutlet, RouterModule } from '@angular/router';
+import { RouterOutlet, RouterModule, RouterLink } from '@angular/router';
 import { Header } from './header/header';
 import { Footer } from './footer/footer';
 import { ModalService } from './service/modal-service';
